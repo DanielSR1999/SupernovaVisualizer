@@ -76,8 +76,6 @@
     <Compile Include="Assets\Scripts\AudioVisualization\LighOnAudio.cs" />
     <Compile Include="Assets\Scripts\AudioVisualization\ScaleOnAmplitude.cs" />
     <Compile Include="Assets\Scripts\AudioVisualization\TangentCircles.cs" />
-    <Compile Include="Assets\StarNestSkybox\Scripts\CameraScroll.cs" />
-    <Compile Include="Assets\StarNestSkybox\Scripts\SkyboxSwitcher.cs" />
     <None Include="Assets\StarNestSkybox\StarNestSkyboxReadme.txt" />
     <None Include="Assets\AudioImporter\NAudio\NAudio.xml" />
     <None Include="Assets\StarNestSkybox\StarNestSkybox_HSV.shader" />
@@ -88,31 +86,31 @@
     <None Include="Assets\StarNestSkybox\StarNestSkybox.shader" />
     <None Include="Assets\StarNestSkybox\StarNest.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -292,7 +290,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="NAudio">
-      <HintPath>C:/Users/DANIEL_FS/Downloads/SupernovaMusic/Assets/AudioImporter/NAudio/NAudio.dll</HintPath>
+      <HintPath>C:/Users/DANIEL_FS/Documents/GitHub/SupernovaVisualizer/SupernovaMusic/Assets/AudioImporter/NAudio/NAudio.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.18f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

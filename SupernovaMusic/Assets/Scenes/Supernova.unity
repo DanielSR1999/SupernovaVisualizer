@@ -691,10 +691,10 @@ RectTransform:
   m_Father: {fileID: 58026851}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 320, y: 988}
-  m_SizeDelta: {x: 562, y: 112.2}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.000015258789, y: -28.149994}
+  m_SizeDelta: {x: 943.6, y: 56.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746190650
 MonoBehaviour:
@@ -718,7 +718,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 8555faeca7a22b44782f8d12d1482562, type: 3}
     m_FontSize: 34
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 109
     m_Alignment: 4
@@ -727,7 +727,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "           CREA UNIVERSOS    \n       CON TUS SONIDOS"
+  m_Text: CREA UNIVERSOS CON TUS SONIDOS
 --- !u!222 &746190651
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -993,7 +993,7 @@ MonoBehaviour:
   _attractPoints: 0700000001000000050000000300000004000000020000000600000000000000
   _spacingDirection: {x: 0, y: 0, z: 1}
   _spacingBetweenAttractPoints: 1
-  _scaleAttractPoints: 10
+  _scaleAttractPoints: 9.5
   _amountOfAtomPerPoint: 120
   _atomScaleMinMax: {x: 0, y: 0.5}
   _strengOfAttraction: 200
