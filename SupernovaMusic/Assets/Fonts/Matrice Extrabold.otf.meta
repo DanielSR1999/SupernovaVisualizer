@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 8555faeca7a22b44782f8d12d1482562
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Matrice
+  fontNames:
+  - Matrice
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 099d76276a605334cbc086a8ecd79615, type: 3}
+  - {fileID: 12800000, guid: 17eab08a16e0702459fd9734ff060051, type: 3}
+  - {fileID: 12800000, guid: 4659f3ea704b5914089be3d77b8eeb73, type: 3}
+  - {fileID: 12800000, guid: 36f897accc7739d40be3ac98d3efa966, type: 3}
+  - {fileID: 12800000, guid: 763511af7012da8458ee2e66461c0d2b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: bd781ee3cc73100489c7fed4b016f3f7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Matrice
+  fontNames:
+  - Matrice
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 897bacb2e055d5e42b91754e29f0bea6, type: 3}
+  - {fileID: 12800000, guid: b8c3594446d6cd748b0d114e2c8e1a4c, type: 3}
+  - {fileID: 12800000, guid: b65e71b4507dc404b821278aa77539dc, type: 3}
+  - {fileID: 12800000, guid: 099d76276a605334cbc086a8ecd79615, type: 3}
+  - {fileID: 12800000, guid: 91322b783d11a7549a3e599106210205, type: 3}
+  - {fileID: 12800000, guid: 17eab08a16e0702459fd9734ff060051, type: 3}
+  - {fileID: 12800000, guid: 4659f3ea704b5914089be3d77b8eeb73, type: 3}
+  - {fileID: 12800000, guid: a5c169fbe205a1f4eb5fcfb3dc944e53, type: 3}
+  - {fileID: 12800000, guid: 36f897accc7739d40be3ac98d3efa966, type: 3}
+  - {fileID: 12800000, guid: 8555faeca7a22b44782f8d12d1482562, type: 3}
+  - {fileID: 12800000, guid: 9dba0c5f5b2aa154bb19fab67ea0d6f4, type: 3}
+  - {fileID: 12800000, guid: 763511af7012da8458ee2e66461c0d2b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
