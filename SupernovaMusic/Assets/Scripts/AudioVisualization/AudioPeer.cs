@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class AudioPeer : MonoBehaviour
 {
     public AudioSource _audioSource;
+
+    //FFT values
     static float[] _samplesLeft = new float[512];
     static float[] _samplesRight = new float[512];
 
@@ -13,22 +16,30 @@ public class AudioPeer : MonoBehaviour
     float[] _bandBuffer = new float[8];
     float[] _bufferDecrease = new float[8];
     float[] _freqBandHighest = new float[8];
+
     //Audio 64
     float[] _freqBand64 = new float[64];
     float[] _bandBuffer64 = new float[64];
     float[] _bufferDecrease64 = new float[64];
     float[] _freqBandHighest64 = new float[64];
+
+    //audio band values
     [HideInInspector]
     public static float[] _audioBand,_audioBandBuffer;
     [HideInInspector]
     public static float[] _audioBand64, _audioBandBuffer64;
 
+    //Amplitude variables
     [HideInInspector]
     public static float _Amplitude, _AmplitudeBuffer;
     float _AmplitudeHighest;
-    public float _audioProfile;
+
+    //AudioProfile
+    public static float _audioProfile;
+
     private static AudioPeer instance;
 
+    //Stereo channels
     public enum _channel
     {
         Stereo,
@@ -36,7 +47,13 @@ public class AudioPeer : MonoBehaviour
         right
     }
     public _channel channel = new _channel();
-
+    
+    //Microphone Inputs visuals
+    public bool _useMicrophone;
+    public string _selectedDevice;
+    public AudioClip _audioClip;
+    public Image _MicrophoneButton;
+    public Color _noSelectedMicrophone, _selectedMicrophone;
     private void Awake()
     {
         if(instance==null)
@@ -55,7 +72,33 @@ public class AudioPeer : MonoBehaviour
         _audioBandBuffer = new float[8];
         _audioBand64 = new float[64];
         _audioBandBuffer64 = new float[64];
-        AudioProfile(_audioProfile);
+        AudioProfile(_audioProfile);      
+    }
+
+    public void EnableDisableMicrophone()
+    {
+        if(_useMicrophone)
+        {
+            _useMicrophone = false;
+            _audioSource.clip = _audioClip;
+            _MicrophoneButton.color = _noSelectedMicrophone;
+        }
+        else
+        {
+            _useMicrophone = true;
+            if (Microphone.devices.Length > 0)
+            {
+                _selectedDevice = Microphone.devices[0].ToString();
+                _audioSource.clip = Microphone.Start(_selectedDevice, true, 10, AudioSettings.outputSampleRate);
+                _MicrophoneButton.color = _selectedMicrophone;
+            }
+            else
+            {
+                _useMicrophone = false;
+                _MicrophoneButton.color = _noSelectedMicrophone;
+            }
+        }
+        _audioSource.Play();
     }
     private void OnLevelWasLoaded(int level)
     {

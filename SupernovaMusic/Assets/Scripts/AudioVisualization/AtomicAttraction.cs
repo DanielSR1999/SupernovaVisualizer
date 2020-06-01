@@ -38,6 +38,15 @@ public class AtomicAttraction : MonoBehaviour
     public _emissionColor emissionColor = new _emissionColor();
     public enum _atomScale { Buffered, NoBuffer }
     public _atomScale atomScale = new _atomScale();
+
+    public bool _animatePos = false;
+    Vector3 _startPoint;
+    public Vector3 _destination;
+    public AnimationCurve _animationCurve;
+    float _animTimer;
+    public float _animSpeed;
+    public int _posAnimBand;
+    public bool _posAnimBuffered;
     private void OnDrawGizmos()
     {
         for (int i=0;i<_attractPoints.Length;i++)
@@ -53,9 +62,14 @@ public class AtomicAttraction : MonoBehaviour
                 transform.position.z + (_spacingBetweenAttractPoints * i * _spacingDirection.z));
             Gizmos.DrawSphere(pos, _scaleAttractPoints*0.5f);
         }
+        Gizmos.color = new Color(1, 1, 1);
+        Vector3 startPoint = transform.position;
+        Vector3 endPoint = transform.position + _destination;
+        Gizmos.DrawLine(startPoint, endPoint);
     }
     private void Start()
     {
+        _startPoint = transform.position;
         _attractorArray = new GameObject[_attractPoints.Length];
         _atomArray = new GameObject[_attractPoints.Length * _amountOfAtomPerPoint];
         _atomScaleSet = new float[_attractPoints.Length * _amountOfAtomPerPoint];
@@ -118,6 +132,7 @@ public class AtomicAttraction : MonoBehaviour
     {
         SelectAudioValues();
         AtomBehavior();
+        AnimatePosition();
     }
     void AtomBehavior()
     {
@@ -140,6 +155,34 @@ public class AtomicAttraction : MonoBehaviour
                                                                         _atomScaleSet[countAtom] + _audioBandScale[_attractPoints[i]] * _audioScaleMultiplier);
                 countAtom++;
             }
+        }
+    }
+    void AnimatePosition()
+    {
+        if(_animatePos)
+        {
+            if(_posAnimBuffered)
+            {
+                if(!System.Single.IsNaN(AudioPeer._audioBandBuffer[_posAnimBand]))
+                {
+                    _animTimer += Time.deltaTime * AudioPeer._audioBandBuffer[_posAnimBand] * _animSpeed;
+
+                }
+            }
+            else
+            {
+                if (!System.Single.IsNaN(AudioPeer._audioBand[_posAnimBand]))
+                {
+                    _animTimer += Time.deltaTime * AudioPeer._audioBand[_posAnimBand] * _animSpeed;
+                }
+            }
+            if(_animTimer>=1)
+            {
+                _animTimer -= 1f;
+            }
+            float _alphaTime2 = _animationCurve.Evaluate(_animTimer);
+            Vector3 endPoint = _destination + _startPoint;
+            transform.position = Vector3.Lerp(_startPoint, endPoint, _alphaTime2);
         }
     }
     void SelectAudioValues()
